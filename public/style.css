@@ -1,0 +1,277 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Set background color to #333 */
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between; /* Space between Home/Contact on the left and Login on the right */
+    align-items: center; /* Vertically center the items */
+    background-color: #333; 
+    color: white;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.nav-left {
+    display: flex;
+}
+
+.nav-left a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.nav-left a:hover {
+    text-decoration: underline;
+}
+
+
+.login-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-button:hover {
+    background-color: #ff8533;
+}
+
+/* Book Compartment Styling (For Home Page) */
+.book-compartment {
+    margin-top: 20px;
+    text-align: center; /* Center the heading */
+}
+
+.book-compartment h2 {
+    color: white; /* Set the heading text color to white */
+    margin-bottom: 20px;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center; /* Center the books horizontally */
+    flex-wrap: wrap; /* Ensure books wrap if the screen is small */
+    gap: 20px; /* Adds spacing between the books */
+    margin: 0 auto; /* Centers the entire container */
+    max-width: 800px; /* Limit the container width */
+}
+
+.book-cover {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.book-cover img {
+    width: 150px;
+    height: 220px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.book-cover img:hover {
+    transform: scale(1.1); /* Make the image pop up */
+}
+
+.book-cover h3 {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Book Description Page Styling */
+.book-description {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #444; /* Background color for book description */
+    padding: 40px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.book-cover img {
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-details {
+    background-color: white;
+    margin: 25px;
+    border-radius: 25px;
+    display: flex;
+}
+
+.book-details img{
+    margin-left: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.book-details h1 {
+    text-transform: uppercase;
+    margin-left: 20px;
+    font-size: 32px;
+    color: #ff6600; /* Match the button color */
+}
+
+.rightSide{
+    padding-left: 20px;
+    padding-top: 40px;
+}
+.book-details h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.book-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+
+}
+
+.book-details strong {
+    color: #ff6600; /* Accent color for key details */
+}
+
+/* Login Page Styling */
+.login-container {
+    background-color: #444; /* Background color similar to the rest of the site */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Limit the width */
+    margin: 100px auto; /* Center the form on the page */
+    color: white;
+    text-align: center;
+}
+
+.login-container h2 {
+    font-size: 28px;
+    color: #ff6600; /* Match the accent color */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left; /* Align input labels to the left */
+}
+
+.input-group label {
+    font-size: 16px;
+    color: white;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #333;
+    color: white;
+}
+
+.input-group input:focus {
+    outline: none;
+    background-color: #555;
+}
+
+
+.login-button:hover {
+    background-color: #ff8533;
+}
+
+.forgot-password {
+    margin-top: 20px;
+}
+
+.forgot-password a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Add padding to the body for the login page */
+body.login-page {
+    padding: 40px;
+}
+.login-button {
+    width: auto; /* Make the button adjust based on content */
+    padding: 8px 16px; /* Reduce padding for a smaller appearance */
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px; /* Smaller font size */
+}
+
+.login-button:hover {
+    background-color: #ff8533;
+}
+/* Contact Page Styling */
+.contact-info {
+    background-color: #444; /* Background color similar to the rest of the site */
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    max-width: 800px; /* Limit the width of the contact section */
+    margin: 50px auto; /* Center the contact section */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
+    text-align: center;
+}
+
+.contact-info h2 {
+    color: #ff6600; /* Match the accent color */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.contact-details h3 {
+    color: #ff6600; /* Accent color */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-details a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.contact-details a:hover {
+    text-decoration: underline;
+}
+    

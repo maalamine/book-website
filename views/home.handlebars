@@ -1,0 +1,14 @@
+<!-- Compartment for books -->
+<section class="book-compartment">
+    <h2>Book Collection</h2>
+    <div class="book-container">
+                {{#each books}}
+                <a class="book-cover" id="book-cover" href="/book/{{Bid}}">
+                    <img src="{{Bimage}}" alt="" srcset="">
+                    <h3>{{Bname}}</h3>
+                </a>
+                {{/each}}
+    </div>
+</section>
+
+<link rel="stylesheet" href="style.css">
